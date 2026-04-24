@@ -1,0 +1,6 @@
+cnlib
+numpy<2
+pandas
+plotly
+protobuf<5
+streamlit

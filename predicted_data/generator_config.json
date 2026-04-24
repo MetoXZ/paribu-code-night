@@ -1,0 +1,133 @@
+{
+  "regimes": {
+    "steady_bull": {
+      "name": "steady_bull",
+      "daily_drift_min": 0.0015,
+      "daily_drift_max": 0.004,
+      "daily_vol_min": 0.015,
+      "daily_vol_max": 0.03,
+      "volume_multiplier_min": 0.8,
+      "volume_multiplier_max": 1.5,
+      "description": "Kararlı yükseliş trendi",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "explosive_bull": {
+      "name": "explosive_bull",
+      "daily_drift_min": 0.004,
+      "daily_drift_max": 0.01,
+      "daily_vol_min": 0.03,
+      "daily_vol_max": 0.06,
+      "volume_multiplier_min": 1.5,
+      "volume_multiplier_max": 3.0,
+      "description": "Parabolik ralli, çok yüksek hacim",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "sideways": {
+      "name": "sideways",
+      "daily_drift_min": -0.0005,
+      "daily_drift_max": 0.0005,
+      "daily_vol_min": 0.01,
+      "daily_vol_max": 0.025,
+      "volume_multiplier_min": 0.5,
+      "volume_multiplier_max": 1.0,
+      "description": "Yatay seyir, düşük hacim",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "steady_bear": {
+      "name": "steady_bear",
+      "daily_drift_min": -0.004,
+      "daily_drift_max": -0.0015,
+      "daily_vol_min": 0.015,
+      "daily_vol_max": 0.035,
+      "volume_multiplier_min": 0.8,
+      "volume_multiplier_max": 1.5,
+      "description": "Kontrollü düşüş trendi",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "capitulation": {
+      "name": "capitulation",
+      "daily_drift_min": -0.015,
+      "daily_drift_max": -0.005,
+      "daily_vol_min": 0.04,
+      "daily_vol_max": 0.08,
+      "volume_multiplier_min": 2.0,
+      "volume_multiplier_max": 4.0,
+      "description": "Panik satışı, yüksek hacim ve volatilite",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "death_spiral": {
+      "name": "death_spiral",
+      "daily_drift_min": -0.03,
+      "daily_drift_max": -0.01,
+      "daily_vol_min": 0.05,
+      "daily_vol_max": 0.1,
+      "volume_multiplier_min": 1.0,
+      "volume_multiplier_max": 2.5,
+      "description": "Sıfıra yaklaşma, proje çöküşü",
+      "is_two_phase": false,
+      "min_floor_pct": 0.001
+    },
+    "recovery": {
+      "name": "recovery",
+      "daily_drift_min": 0.002,
+      "daily_drift_max": 0.006,
+      "daily_vol_min": 0.025,
+      "daily_vol_max": 0.05,
+      "volume_multiplier_min": 1.2,
+      "volume_multiplier_max": 2.0,
+      "description": "Çöküş sonrası toparlanma",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "volatile_chop": {
+      "name": "volatile_chop",
+      "daily_drift_min": -0.0005,
+      "daily_drift_max": 0.0005,
+      "daily_vol_min": 0.04,
+      "daily_vol_max": 0.07,
+      "volume_multiplier_min": 1.5,
+      "volume_multiplier_max": 3.0,
+      "description": "Yoğun dalgalanma, net yatay",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    },
+    "pump_dump": {
+      "name": "pump_dump",
+      "daily_drift_min": 0.005,
+      "daily_drift_max": 0.02,
+      "daily_vol_min": 0.05,
+      "daily_vol_max": 0.1,
+      "volume_multiplier_min": 3.0,
+      "volume_multiplier_max": 5.0,
+      "description": "Ani yükseliş sonrası sert düşüş",
+      "is_two_phase": true,
+      "min_floor_pct": null
+    },
+    "accumulation": {
+      "name": "accumulation",
+      "daily_drift_min": 0.0002,
+      "daily_drift_max": 0.001,
+      "daily_vol_min": 0.008,
+      "daily_vol_max": 0.015,
+      "volume_multiplier_min": 0.3,
+      "volume_multiplier_max": 0.7,
+      "description": "Düşük hacim sıkışma, breakout öncesi",
+      "is_two_phase": false,
+      "min_floor_pct": null
+    }
+  },
+  "prediction_start": "2027-03-16",
+  "prediction_end": "2028-03-15",
+  "prediction_days": 365,
+  "coins": [
+    "kapcoin-usd_train",
+    "metucoin-usd_train",
+    "tamcoin-usd_train"
+  ],
+  "total_scenarios": 1000
+}
